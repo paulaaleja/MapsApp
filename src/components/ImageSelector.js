@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, View, Alert, Image, Button } from "react-native";
 import * as ImagePicker from "expo-image-picker";
+
+import { Alert, Button, Image, StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+
 //import * as Permissions from "expo-permissions";
 import { COLORS } from "../constants";
 
@@ -45,7 +47,7 @@ const ImageSelector = (props) => {
       </View>
       <Button
         title="Tomar Foto"
-        color={COLORS.LIGTH_PINK}
+        color={COLORS.LIGTH}
         onPress={handlerTakeImage}
       />
     </View>

@@ -1,8 +1,9 @@
+import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import React, { useEffect } from "react";
-import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
-import { useSelector } from "react-redux";
-import MapPreview from "../components/MapPreview";
+
 import { COLORS } from "../constants";
+import MapPreview from "../components/MapPreview";
+import { useSelector } from "react-redux";
 
 const PlaceDetailScreen = ({ route }) => {
   const { placeId } = route.params;
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   address: {
-    color: COLORS.MAROON,
+    color: COLORS.VIOLE,
     textAlign: "center",
   },
   map: {
